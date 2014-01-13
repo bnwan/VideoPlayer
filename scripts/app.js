@@ -1,11 +1,11 @@
-﻿(function (root, $, app) {
+(function (root, $, app) {
     "use strict";
 
     var defaultPlayerSize = app.constants.playerSize.large;    
 
     var playerModel = new app.models.playerModel({
         size: defaultPlayerSize,     
-        src: "",
+        src: "http://video-js.zencoder.com/oceans-clip.mp4",
         type: "video/mp4"
     });
 
