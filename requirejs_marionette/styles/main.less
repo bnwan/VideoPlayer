@@ -1,0 +1,57 @@
+
+
+@import "../components/less-bootstrap/less/bootstrap.less";
+
+@action-link-color: #0094ff;
+
+body {
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+
+.sidebar-nav {
+    padding: 9px 0;
+}
+
+@media (max-width: 980px) {
+    /* Enable use of floated navbar text */
+    .navbar-text.pull-right {
+        float: none;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+#main-region {
+    padding-top: 0px;
+    padding-left: 20px;
+}
+
+footer {
+    padding: 30px 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;       
+
+    &.action {
+        color: @action-link-color;
+        
+         &:hover {
+            color: #808080;
+            text-decoration: none;
+        }
+    }
+
+    &.disabled-action {
+        color: #808080;
+        text-decoration: none;
+        cursor: none;
+
+        &:hover {
+            color: #808080;
+            text-decoration: none;
+        }
+    }
+}
